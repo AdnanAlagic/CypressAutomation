@@ -13,7 +13,7 @@ describe('Alerts', () => {
         })
 
         cy.get("#confirmbtn").click();
-        cy.on('window:confirm',(str) => {
+        cy.on('window:confirm', (str) => {
             expect(str).to.equal('Hello , Are you sure you want to confirm?');
         })
     })

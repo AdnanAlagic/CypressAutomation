@@ -5,7 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    // govorimo gdje se nalaze nasi test file-ovi
-    specPattern: 'cypress/integration/examples/*.js'
+    // where are the testing files stored
+    specPattern: 'cypress/integration/examples/*/*.js'
   },
 });

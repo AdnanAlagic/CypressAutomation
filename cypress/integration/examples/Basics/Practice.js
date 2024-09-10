@@ -28,7 +28,7 @@ describe("Practice One", function () {
 
         cy.get(".alert").then((data) => {
             const text = data.text();
-            expect(text).includes("Success! Thank you! Your order will be delivered in next few weeks :-).");
+            expect(text).includes("Success! Thank ou! Your order will be delivered in next few weeks :-).");
         })
     })
 })

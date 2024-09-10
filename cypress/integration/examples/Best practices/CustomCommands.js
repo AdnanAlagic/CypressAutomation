@@ -1,3 +1,5 @@
+const cypress = require("cypress");
+
 describe('Custom commands', function () {
 
 
@@ -24,7 +26,9 @@ describe('Custom commands', function () {
         // Look into /support/commands.js file
         // cy.selectProduct("Blackberry");
 
+        //We are able to define custom configuration only for specific test
 
+        Cypress.config('defaultCommandTimeout',7000);
 
         //If we want to do it for array of products
 

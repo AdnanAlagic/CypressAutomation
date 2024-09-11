@@ -7,13 +7,16 @@
     "test": "npx cypress run",
     "headedTest": "npx cypress run --headed",
     "recordDashBordTest": "npx cypress run --record --key cd6017a9-8732-4b30-932a-caa0a6234cf9",
-    "specificFolderRun" : "npx cypress run --spec \"cypress/integration/examples/Basics/*\""
-    },
-
+    "specificFolderRun": "npx cypress run --spec \"cypress/integration/examples/Basics/*\""
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.14.2",
     "cypress-mochawesome-reporter": "^3.8.2"
+  },
+  "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.1.2",
+    "@cypress/browserify-preprocessor": "latest"
   }
 }

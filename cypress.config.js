@@ -5,6 +5,7 @@ module.exports = defineConfig({
   defaultCommandTimeout: 5000,
   reporter: 'cypress-mochawesome-reporter',
   video: true,
+  projectId: "esgdvq",
 
   env: {
     url : "https://rahulshettyacademy.com"

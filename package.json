@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "npx cypress run",
+    "headedTest": "npx cypress run --headed",
+    "recordDashBordTest": "npx cypress run --record --key cd6017a9-8732-4b30-932a-caa0a6234cf9",
+    "specificFolderRun" : "npx cypress run --spec \"cypress/integration/examples/Basics/*\""
+    },
+
   "author": "",
   "license": "ISC",
   "devDependencies": {

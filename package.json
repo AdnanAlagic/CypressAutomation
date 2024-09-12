@@ -7,7 +7,9 @@
     "test": "npx cypress run",
     "headedTest": "npx cypress run --headed",
     "recordDashBordTest": "npx cypress run --record --key cd6017a9-8732-4b30-932a-caa0a6234cf9",
-    "specificFolderRun": "npx cypress run --spec \"cypress/integration/examples/Basics/*\""
+    "specificFolderRun": "npx cypress run --spec \"cypress/integration/examples/Basics/*\"",
+    "FormValidationTest": "npx cypress run --spec \"cypress/integration/examples/BDD/Form.feature\"",
+    "FormValidationTestWithDashboard": "npx cypress run --spec \"cypress/integration/examples/BDD/Form.feature\" --headed --browser chrome"
   },
   "author": "",
   "license": "ISC",

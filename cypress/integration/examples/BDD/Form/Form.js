@@ -1,9 +1,4 @@
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor';
-import HomePage from '../../Best practices/PageObjects/HomePageObject';
-
-const HomePage = new HomePage();
-
-
 Given('I open landing page', () => {
     cy.visit("https://rahulshettyacademy.com/angularpractice/");
 })

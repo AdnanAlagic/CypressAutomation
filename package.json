@@ -9,7 +9,7 @@
     "recordDashBordTest": "npx cypress run --record --key cd6017a9-8732-4b30-932a-caa0a6234cf9",
     "specificFolderRun": "npx cypress run --spec \"cypress/integration/examples/Basics/*\"",
     "FormValidationTest": "npx cypress run --spec \"cypress/integration/examples/BDD/Form.feature\"",
-    "FormValidationTestWithAllure": "npx cypress run --spec \"cypress/integration/examples/BDD/Form.feature\" && allure generate allure-report --clean && allure open",
+    "FormValidationTestWithAllure": "npx cypress run --spec \"cypress/integration/examples/BDD/Form.feature\" && allure generate allure-results --output allure-report",
     "FormValidationTestWithDashboard": "npx cypress run --spec \"cypress/integration/examples/BDD/Form.feature\" --headed --browser chrome",
     "Allure": "npx allure generate allure-results --clean -o allure-report && npx allure open allure-report"
   },

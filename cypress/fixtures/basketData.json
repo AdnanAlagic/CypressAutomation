@@ -1,0 +1,48 @@
+{
+  "monthly": {
+    "monthlyTariff": [
+      {
+        "title": "Internet 50",
+        "price": "34,90 €"
+      },
+      {
+        "title": "Infrastruktur-Pauschale",
+        "price": "7,00 €"
+      },
+      {
+        "title": "Zwischensumme",
+        "price": "41,90 €"
+      }
+    ],
+    "monthlyExtras": [
+      {
+        "title": "FRITZ!Box 7530 AX",
+        "price": "3,00 €"
+      },
+      {
+        "title": "Zwischensumme",
+        "price": "3,00 €"
+      }
+    ],
+    "monthlyTotal": [
+      {
+        "title": "Gesamt Monatlich",
+        "price": "44,90 €"
+      }
+    ]
+  },
+  "oneTime": [
+    {
+      "title": "Bereitstellungspreis",
+      "price": "99,90 €"
+    },
+    {
+      "title": "Versandkosten",
+      "price": "9,90 €"
+    }
+  ],
+  "total": {
+    "title": "Rechnungsbetrag",
+    "price": "109,80 €"
+  }
+}

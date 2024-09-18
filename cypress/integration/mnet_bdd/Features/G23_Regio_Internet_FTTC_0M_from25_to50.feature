@@ -12,6 +12,8 @@ Feature: 1-2 Test for G23 Regio Internet(0 MVLZ) for FTTC_VDSL_2 on the G23 addr
     | duration | speed | buttonText |
     | 0        | 50    | auswählen  |
 
+    When choose ohnelaufzeit term
+
     When on the tariff page he chooses phone option with title
       | title                 |
       | Kein Telefonanschluss |
@@ -22,8 +24,7 @@ Feature: 1-2 Test for G23 Regio Internet(0 MVLZ) for FTTC_VDSL_2 on the G23 addr
 
     When on the tariff page he sees the router option section with following content:
       | title               | description1                                                         | description2                                                               | description3                                          | description4        | price        | oneTime                         | recommendationText    | button     |
-      | FRITZ!Box 7530      | Für WLAN in kleinen Wohnungen in kleineren Gebäuden                  | WLAN bis 1,2 Gbit/s                                                        |                                                       |                     | 0 €          | Einmalige Versandkosten: 9,90 € |                       | ausgewählt |
-      | FRITZ!Box 7530 AX   | Für WLAN in kleinen bis mittelgroßen Wohnungen in kleineren Gebäuden | Wi-Fi 6 - der neue Standard für Ihr Zuhause oder Büro                      | WLAN bis 2,4 Gbit/s                                   |                     | 3,00 €       | Einmalige Versandkosten: 9,90 € |                       | auswählen |
+      | FRITZ!Box 7530 AX   | Für WLAN in kleinen bis mittelgroßen Wohnungen in kleineren Gebäuden | Wi-Fi 6 - der neue Standard für Ihr Zuhause oder Büro                      | WLAN bis 2,4 Gbit/s                                   |                     | 3,00 €       | Einmalige Versandkosten: 9,90 € |                       | ausgewählt |
       | FRITZ!Box 7590 AX   | Für schnelleres WLAN in größeren Wohnungen                           | Gut geeignet für Einfamilienhäuser mit mehreren Etagen mit FRITZ!Repeatern | Wi-Fi 6 - der neue Standard für Ihr Zuhause oder Büro | WLAN bis 3,6 Gbit/s | 5,00 €       | Einmalige Versandkosten: 9,90 € |                       | auswählen  |
      
 

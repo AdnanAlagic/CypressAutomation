@@ -18,6 +18,8 @@ Feature: 1-2 Test for G23 Regio Internet(0 MVLZ) for FTTC_VDSL_2 on the G23 addr
       | title                 |
       | Kein Telefonanschluss |
 
+    When Open the basket
+
     When Evaluate basket
 
     When Close active basket
@@ -65,5 +67,3 @@ Feature: 1-2 Test for G23 Regio Internet(0 MVLZ) for FTTC_VDSL_2 on the G23 addr
     When on the payment page he gives his bank info and check if it is valid
       | iban                        |
       | DE47 7015 0000 8989 8989 89 |
-
-

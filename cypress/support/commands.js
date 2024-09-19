@@ -18,7 +18,7 @@ Cypress.Commands.add('confirmPrivacyDialog', () => {
         return true;
     });
 
-    cy.wait(5000).then(() => {
+    cy.wait(7000).then(() => {
         cy.wrap(window.top.document.querySelector("#popin_tc_privacy_button")).click({ force: true });
     });
 });

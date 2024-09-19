@@ -8,6 +8,7 @@ before(() => {
   });
 });
 
+
 Given('Fred is on the environment of luna angular wks1 page with channel and configurationId and geoId in url', (dataTable) => {
   cy.visitCheckoutPage(dataTable);
 });
@@ -37,9 +38,8 @@ When('choose ohnelaufzeit term', () => {
 });
 
 
-
 When('Evaluate basket', () => {
-  cy.get('.header-basket').click();
+
   cy.get('.header-basket').click();
   cy.checkBasketItem(0, basketData.monthly.monthlyTariff[0].title, basketData.monthly.monthlyTariff[0].price);
   cy.checkBasketItem(1, basketData.monthly.monthlyTariff[1].title, basketData.monthly.monthlyTariff[1].price);
@@ -108,4 +108,8 @@ When('on the customer data page he fills in the form with his personal data', (d
 When('on the payment page he gives his bank info and check if it is valid', (dataTable) => {
   const iban = dataTable.rawTable[1][0];
   cy.get('#salesOrder_billingAccount_iban').type(iban);
+});
+
+When('Open the basket', () => {
+  cy.get('.header-basket').click({force:true});
 });

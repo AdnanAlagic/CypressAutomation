@@ -6,13 +6,15 @@ Feature: 1-2 Test for G23 Regio Internet(0 MVLZ) for FTTC_VDSL_2 on the G23 addr
       | PK      | Tarif   | SFF_SF          | 4371975 |
 
     When he confirms the privacy dialog
-    When Close basket
+    When he close basket modal popup
 
     When on the tariff page he chooses tariff with speed
-    | duration | speed | buttonText |
-    | 0        | 50    | auswählen  |
+      | duration | speed | buttonText |
+      | 0        | 50    | auswählen  |
 
-    When choose ohnelaufzeit term
+    When choose tariff term
+      | duration |
+      | 0        |
 
     When on the tariff page he chooses phone option with title
       | title                 |
@@ -25,10 +27,10 @@ Feature: 1-2 Test for G23 Regio Internet(0 MVLZ) for FTTC_VDSL_2 on the G23 addr
     When Close active basket
 
     When on the tariff page he sees the router option section with following content:
-      | title               | description1                                                         | description2                                                               | description3                                          | description4        | price        | oneTime                         | recommendationText    | button     |
-      | FRITZ!Box 7530 AX   | Für WLAN in kleinen bis mittelgroßen Wohnungen in kleineren Gebäuden | Wi-Fi 6 - der neue Standard für Ihr Zuhause oder Büro                      | WLAN bis 2,4 Gbit/s                                   |                     | 3,00 €       | Einmalige Versandkosten: 9,90 € |                       | ausgewählt |
-      | FRITZ!Box 7590 AX   | Für schnelleres WLAN in größeren Wohnungen                           | Gut geeignet für Einfamilienhäuser mit mehreren Etagen mit FRITZ!Repeatern | Wi-Fi 6 - der neue Standard für Ihr Zuhause oder Büro | WLAN bis 3,6 Gbit/s | 5,00 €       | Einmalige Versandkosten: 9,90 € |                       | auswählen  |
-     
+      | title             | description1                                                         | description2                                                               | description3                                          | description4        | price  | oneTime                         | recommendationText | button     |
+      | FRITZ!Box 7530 AX | Für WLAN in kleinen bis mittelgroßen Wohnungen in kleineren Gebäuden | Wi-Fi 6 - der neue Standard für Ihr Zuhause oder Büro                      | WLAN bis 2,4 Gbit/s                                   |                     | 3,00 € | Einmalige Versandkosten: 9,90 € |                    | ausgewählt |
+      | FRITZ!Box 7590 AX | Für schnelleres WLAN in größeren Wohnungen                           | Gut geeignet für Einfamilienhäuser mit mehreren Etagen mit FRITZ!Repeatern | Wi-Fi 6 - der neue Standard für Ihr Zuhause oder Büro | WLAN bis 3,6 Gbit/s | 5,00 € | Einmalige Versandkosten: 9,90 € |                    | auswählen  |
+
 
     When on the tariff page he sees phone options with following content:
       | title                 | text                                                                                                          | price        | button     |
@@ -45,8 +47,8 @@ Feature: 1-2 Test for G23 Regio Internet(0 MVLZ) for FTTC_VDSL_2 on the G23 addr
       | Weiter zu meinen Daten |
 
     When Select customer type
-      | type                     |
-      | privateCustomer          |
+      | type            |
+      | privateCustomer |
 
     When on the customer page he fills address addon
       | addressAddon | previousTenant |

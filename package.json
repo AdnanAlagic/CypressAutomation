@@ -6,19 +6,19 @@
   "scripts": {
     "test": "npx cypress run",
     "headedTest": "npx cypress run --headed",
-    "recordDashBordTest": "npx cypress run --record --key cd6017a9-8732-4b30-932a-caa0a6234cf9",
+    "recordDashBordTest": "npx cypress run --record",
     "specificFolderRun": "npx cypress run --spec \"cypress/integration/examples/Basics/*\"",
     "FormValidationTest": "npx cypress run --spec \"cypress/integration/examples/BDD/Form.feature\"",
     "FormValidationTestWithAllure": "npx cypress run --spec \"cypress/integration/examples/BDD/Form.feature\"",
     "FormValidationTestWithDashboard": "npx cypress run --spec \"cypress/integration/examples/BDD/Form.feature\" --headed --browser chrome",
-    "RunG23RegioInternetFTTC50": "npx cypress run \"cypress/integration/mnet_bdd/Features/*.feature\" --headed --browser chrome"
-   
+    "RunG23RegioInternetFTTC50": "npx cypress run \"cypress/integration/mnet_bdd/Features/*.feature\" && allure generate ./allure-results -o ./allure-report --clean"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.40.2",
     "allure-commandline": "^2.30.0",
+    "allure-cypress": "^3.0.1",
     "cypress": "^13.14.2",
     "cypress-iframe": "^1.0.1",
     "cypress-mochawesome-reporter": "^3.8.2",

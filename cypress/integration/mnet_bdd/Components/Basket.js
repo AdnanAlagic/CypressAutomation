@@ -11,7 +11,7 @@ class Basket {
     };
 
     openBasket() {
-        cy.get(this.locators.headerBusket).click({ force: true });
+        cy.get(this.locators.headerBusket).click();
     }
 
     closeBasket() {

@@ -2,16 +2,12 @@ const { defineConfig } = require("cypress");
 const preprocessor = require("@badeball/cypress-cucumber-preprocessor");
 const browserify = require("@badeball/cypress-cucumber-preprocessor/browserify");
 const allureWriter = require('@shelex/cypress-allure-plugin/writer');
+const { allureCypress } = require("allure-cypress/reporter");
 
 async function setupNodeEvents(on, config) {
-  // Add Cucumber plugin
   await preprocessor.addCucumberPreprocessorPlugin(on, config);
-
-  // Configure browserify preprocessor
   on("file:preprocessor", browserify.default(config));
-
-  // Add Allure plugin
-  allureWriter(on, config);
+  allureCypress(on, config);
 
   return config;
 }
